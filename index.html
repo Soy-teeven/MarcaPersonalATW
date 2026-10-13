@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Edgar Steeven Quishpi</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Barra de navegacion -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark barra-navegacion fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-white" href="#inicio">Edgar Quishpi</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section con Flexbox -->
+    <section id="inicio" class="hero-section d-flex flex-column align-items-center justify-content-center text-center text-white">
+      <div class="container d-flex flex-column align-items-center">
+        <img src="img/perfil.png" alt="Foto de perfil" class="foto-perfil rounded-circle mb-3 shadow">
+        <h1 class="fw-bold mb-2">Edgar Steeven Quishpi</h1>
+        <p class="lead mb-4 text-light">Estudiante de Ingenieria en TI | Desarrollador Web Junior</p>
+        <div class="d-flex flex-column flex-sm-row gap-3">
+          <a href="#proyectos" class="btn btn-esmeralda btn-lg">Ver Proyectos</a>
+          <a href="#contacto" class="btn btn-outline-light btn-lg">Contactar</a>
+          <a href="cv.pdf" target="_blank" class="btn btn-light btn-lg">Descargar CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion de Habilidades (Skills) -->
+    <section id="habilidades" class="py-5 seccion-clara">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-3">Habilidades Tecnicas</h2>
+        <p class="text-center text-muted mb-5">Nivel de dominio en las tecnologias revisadas en clase:</p>
+        
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-md-6">
+            <div class="mb-3 bg-white p-3 rounded border">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-semibold">HTML5</span>
+                <span class="fw-bold texto-esmeralda">85%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar barra-html"></div>
+              </div>
+            </div>
+
+            <div class="mb-3 bg-white p-3 rounded border">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-semibold">CSS3 & Bootstrap 5</span>
+                <span class="fw-bold texto-esmeralda">80%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar barra-css"></div>
+              </div>
+            </div>
+
+            <div class="mb-3 bg-white p-3 rounded border">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-semibold">JavaScript</span>
+                <span class="fw-bold text-warning">70%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar barra-js"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="mb-3 bg-white p-3 rounded border">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-semibold">PHP</span>
+                <span class="fw-bold text-secondary">75%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar barra-php"></div>
+              </div>
+            </div>
+
+            <div class="mb-3 bg-white p-3 rounded border">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-semibold">MySQL</span>
+                <span class="fw-bold text-primary">75%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar barra-mysql"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <span class="badge bg-secondary p-2 m-1">Git</span>
+          <span class="badge bg-secondary p-2 m-1">GitHub</span>
+          <span class="badge bg-secondary p-2 m-1">Mobile First</span>
+          <span class="badge bg-secondary p-2 m-1">Flexbox</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion Portafolio de Proyectos Reales -->
+    <section id="proyectos" class="py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-3">Portafolio de Proyectos</h2>
+        <p class="text-center text-muted mb-5">Proyectos con su codigo fuente disponible en GitHub:</p>
+        
+        <div class="row g-4">
+          <!-- Proyecto 1: Auto Asistente -->
+          <div class="col-12 col-md-4">
+            <div class="card tarjeta-proyecto h-100 shadow-sm">
+              <img src="img/p1.png" class="card-img-top card-imagen" alt="Agenda de Mantenimiento">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Auto Asistente</h5>
+                <p class="card-text text-muted">Agenda para gestion y registro de mantenimiento vehicular. Aplica Bootstrap para interfaz responsiva y LocalStorage para persistencia de datos.</p>
+                <div class="mt-auto">
+                  <span class="badge bg-danger">HTML5</span>
+                  <span class="badge bg-primary">Bootstrap</span>
+                  <span class="badge bg-warning text-dark">LocalStorage</span>
+                  <a href="https://github.com/Soy-teeven/autoAsistente_FW3P" target="_blank" class="btn btn-outline-dark w-100 mt-3">Ver Repositorio</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2: Calculadora de Combustible -->
+          <div class="col-12 col-md-4">
+            <div class="card tarjeta-proyecto h-100 shadow-sm">
+              <img src="img/p2.png" class="card-img-top card-imagen" alt="Calculadora de Gasolina">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Calculadora de Combustible</h5>
+                <p class="card-text text-muted">Herramienta para calcular el rendimiento vehicular por kilometro recorrido, cantidad de galones ingresados y duracion del consumo.</p>
+                <div class="mt-auto">
+                  <span class="badge bg-warning text-dark">JavaScript</span>
+                  <span class="badge bg-danger">HTML5</span>
+                  <span class="badge bg-secondary">CSS3</span>
+                  <a href="https://github.com/Soy-teeven/calculoconsumogas" target="_blank" class="btn btn-outline-dark w-100 mt-3">Ver Repositorio</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3: ChazyFrames -->
+          <div class="col-12 col-md-4">
+            <div class="card tarjeta-proyecto h-100 shadow-sm">
+              <img src="img/p3.png" class="card-img-top card-imagen" alt="Web Corporativa ChazyFrames">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">ChazyFrames Web</h5>
+                <p class="card-text text-muted">Estructuracion y desarrollo de la arquitectura web institucional para presentacion comercial de productos y servicios con React.</p>
+                <div class="mt-auto">
+                  <span class="badge bg-info text-dark">React</span>
+                  <span class="badge bg-dark">Frontend</span>
+                  <span class="badge bg-secondary">Git Colaborativo</span>
+                  <a href="https://github.com/jhadith/chazyframes" target="_blank" class="btn btn-outline-dark w-100 mt-3">Ver Repositorio</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Descarga de CV -->
+    <section id="cv" class="py-5 seccion-cv text-center text-white">
+      <div class="container">
+        <h2 class="fw-bold mb-3">Curriculum Vitae</h2>
+        <p class="mb-4 text-light">Visualiza o descarga mi hoja de vida profesional en formato PDF.</p>
+        <div class="d-flex justify-content-center gap-3 flex-column flex-sm-row">
+          <a href="cv.pdf" target="_blank" class="btn btn-esmeralda btn-lg">Visualizar CV</a>
+          <a href="cv.pdf" download="CV_Edgar_Quishpi.pdf" class="btn btn-outline-light btn-lg">Descargar Archivo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto con Enlaces Reales -->
+    <section id="contacto" class="py-5 seccion-clara">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Contacto</h2>
+        <div class="row g-3 justify-content-center">
+          <!-- Correo -->
+          <div class="col-12 col-md-4">
+            <div class="card p-4 h-100 border bg-white shadow-sm">
+              <h5 class="fw-bold mb-2">Correo Electronico</h5>
+              <p class="text-muted small mb-3">soysteevenquishpi@gmail.com</p>
+              <a href="mailto:soysteevenquishpi@gmail.com" class="btn btn-outline-dark btn-sm">Enviar Mensaje</a>
+            </div>
+          </div>
+          <!-- GitHub -->
+          <div class="col-12 col-md-4">
+            <div class="card p-4 h-100 border bg-white shadow-sm">
+              <h5 class="fw-bold mb-2">GitHub</h5>
+              <p class="text-muted small mb-3">@Soy-teeven</p>
+              <a href="https://github.com/Soy-teeven" target="_blank" class="btn btn-outline-dark btn-sm">Ver Perfil</a>
+            </div>
+          </div>
+          <!-- LinkedIn -->
+          <div class="col-12 col-md-4">
+            <div class="card p-4 h-100 border bg-white shadow-sm">
+              <h5 class="fw-bold mb-2">LinkedIn</h5>
+              <p class="text-muted small mb-3">steeven-quishpi</p>
+              <a href="https://www.linkedin.com/in/steeven-quishpi-9a813038b" target="_blank" class="btn btn-outline-dark btn-sm">Conectar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="barra-navegacion text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0 small text-light">&copy; <span id="anio"></span> Edgar Steeven Quishpi. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
